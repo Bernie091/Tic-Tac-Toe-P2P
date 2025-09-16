@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="mainMenu.css">
+        <script>
+
+            function joinMultiplayer()
+            {
+                window.location.href = "index.html";
+            }
+            function joinSingleplayer()
+            {
+                window.location.href = "singleplayerOptions.html"
+            }
+
+        </script>
+    </head>
+    <body>
+        <h1 class="title">Welcome!</h1>
+        <br>
+        <h2 id="secondTitle">Choose A Gamemode!</h2>
+        <div id="buttonMenu">
+            <input class ="options" id="sp" type="button" value="Singleplayer Mode!" onclick="joinSingleplayer()">
+            <input class ="options" id="mp" type="button" value="Multiplayer Mode!" onclick="joinMultiplayer()">
+        </div>
+    </body>
+</html>

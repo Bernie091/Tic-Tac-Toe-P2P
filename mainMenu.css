@@ -1,0 +1,46 @@
+body
+{
+    background-color: #DCEDC8;
+}
+
+.title {
+    background-color: white;
+    text-align: center;
+    margin-bottom: 0;
+    border: 1px solid #000;
+    width: 300px;
+    margin: auto;
+    box-shadow: 10px 5px 0 #000;
+}
+
+#secondTitle
+{
+    padding: 10px 0px;
+    object-position: center;
+    margin: auto;
+    text-align: center;
+}
+#buttonMenu
+{
+    text-align: center; 
+
+}
+.options
+{
+    font-weight: normal;
+    border-radius: 10px;
+    padding:10px 20px;
+    margin: 10px 10px;
+    transition: 0.5s;
+  
+}
+.options:hover
+{
+    box-shadow: 0 5px 15px rgba(73, 77, 79, 0.972)
+
+}
+#sp, #mp
+{
+    padding: 5px 20px;
+    margin: 0px 5px;
+}

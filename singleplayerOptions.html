@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Game Options</title>
+        <link rel="stylesheet" href="singleOptions.css">
+        <script>
+            function returnButton()
+            {
+                window.location.href = "mainPage.html";
+            }
+
+            function pvpMode()
+            {
+                window.location.href = "singleplayerGame.html";
+            }
+
+            function pvbMode()
+            {
+                window.location.href = "singleBot.html";
+
+            }
+        </script>
+    </head>
+    <body>
+        <div id="titleDiv">
+            <h1 class="title">Tic-Tac-Toe</h1>
+            <br>
+            <input class = "options" id="backButton" type="button" value="Click me to Return to the Main Menu!" onclick="returnButton()">
+        </div>
+
+        <div id="buttonDiv">
+            <input class = "options" id="pvp" type="button" value="Click me to play Player v Player!" onclick="pvpMode()">
+            <input class = "options" id="pvb" type="button" value="Click me to play against a Bot!" onclick="pvbMode()">
+    
+        </div>
+
+    </body>
+</html>

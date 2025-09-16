@@ -1,0 +1,127 @@
+body
+{
+    background-color: #DCEDC8;
+}
+
+table {
+    display: grid;
+    border-collapse: collapse;
+
+    gap: 10px;
+    width: 300px;
+    margin: auto;
+    
+}
+.title {
+    background-color: white;
+    text-align: center;
+    margin-bottom: 0;
+    border: 1px solid #000;
+    width: 300px;
+    margin: auto;
+    box-shadow: 10px 5px 0 #000;
+}
+#titleDiv
+{
+    object-position: center;
+    margin: auto;
+    text-align: center;
+}
+#backButton, #playAgainButton
+{
+    font-weight: bold;
+    border-radius: 10px;
+    padding:10px 20px;
+    margin: 10px 10px;
+    transition: 0.5s;
+  
+}
+
+#backButton:hover, #playAgainButton:hover
+{
+    box-shadow: 0 5px 15px rgba(73, 77, 79, 0.972)
+
+}
+#cell1,  #cell3,#cell5,#cell7,#cell9 {
+    border: 2px black solid;
+    width: 100px;
+    height: 100px;
+    background-color: #f0f0f0;
+}
+
+#cell2, #cell4, #cell6,#cell8 {
+    border: 2px black solid;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(133, 141, 149)
+}
+
+
+#cell1,#cell2,#cell3,#cell4,#cell5,#cell5,#cell6,#cell7,#cell8,#cell9 
+{
+    position: relative;
+    text-align: center;
+ }
+
+  #cell1.clickedPlayer1::after,
+  #cell2.clickedPlayer1::after,
+  #cell3.clickedPlayer1::after,
+  #cell4.clickedPlayer1::after,
+  #cell5.clickedPlayer1::after,
+  #cell6.clickedPlayer1::after,
+  #cell7.clickedPlayer1::after,
+  #cell8.clickedPlayer1::after,
+  #cell9.clickedPlayer1::after {
+    content: "X";
+    color:red;
+    font-size: 20pt;
+    
+       /* Change this color or remove it for player-chosen color */
+  }
+
+  #cell1.clickedPlayer2::after,
+  #cell2.clickedPlayer2::after,
+  #cell3.clickedPlayer2::after,
+  #cell4.clickedPlayer2::after,
+  #cell5.clickedPlayer2::after,
+  #cell6.clickedPlayer2::after,
+  #cell7.clickedPlayer2::after,
+  #cell8.clickedPlayer2::after,
+  #cell9.clickedPlayer2::after {
+    content: "O";
+    color: blue;
+   font-size: 20pt;
+    object-position: center;
+       /* Change this color or remove it for player-chosen color */
+  }
+
+  #Player1
+  {
+    font-size: 30px;
+  }
+  #Player2{
+    font-size: 30px;
+  }
+  
+#indicator
+{
+    display: block;
+    text-align: center;
+}
+#p1_indicator
+{
+    color:rgb(72, 72, 72);
+    display: inline-block;
+    margin: 10px 10px;
+}
+#p2_indicator
+{
+    color:rgb(72, 72, 72);
+    display: inline-block;
+    margin: 10px 10px;
+}
+  
+#endResult
+{
+    text-align: center;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="singleStyle.css">
+    </head>
+
+    <body>
+        <div id="titleDiv">
+            <h1 class="title">Tic-Tac-Toe</h1>
+            <br>
+            <input class = "options" id="backButton" type="button" value="Click me to Return to the Main Menu!" onclick="returnButton()">
+        </div>
+
+        <table>
+        
+            <tr>
+                <td id="cell1" onclick="placeMark('cell1')"></td>
+                <td id="cell2" onclick="placeMark('cell2')"></td>
+                <td id="cell3" onclick="placeMark('cell3')"></td>
+            </tr>
+
+            <tr>
+                <td id="cell4" onclick="placeMark('cell4')"></td>
+                <td id="cell5" onclick="placeMark('cell5')"></td>
+                <td id="cell6" onclick="placeMark('cell6')"></td>
+            </tr>
+
+            <tr>
+                <td id="cell7" onclick="placeMark('cell7')"></td>
+                <td id="cell8" onclick="placeMark('cell8')"></td>
+                <td id="cell9" onclick="placeMark('cell9')"></td>
+            </tr>
+        </table>
+        <div id="indicator">
+            <p id="p1_indicator">Player 1's Turn</p>
+            <p id="p2_indicator">Player 2's Turn</p>
+        </div>
+        
+        <div id="endResult">
+
+        </div>
+
+        <script src="singleplayerLogic.js"></script>
+    </body>
+</html>
